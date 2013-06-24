@@ -81,7 +81,7 @@ class zenpageSubpages {
 	static function subpages_macro($macros) {
 		$macros['SUBPAGES'] = array(
 					'class'=>'function',
-					'params'=> array('string*','string*','string*','string*'), 
+					'params'=> array('string*','int*','string*','string*'), 
 					'value'=>'zenpageSubpages::getSubPagesHTML',
 					'owner'=>'zenpageSubpages',
 					'desc'=>gettext('Prints subpages of a Zenpage: Headline h1-h6 to use (%1), excerpt lenght (%2), readmore text (%3), shorten indicator text (%4). All optional, leave empty with empty quotes of you only need to set the last ones')
